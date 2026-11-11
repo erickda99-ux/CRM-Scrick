@@ -25,7 +25,7 @@ export function FiltroFuente({ fuente }: FiltroFuenteProps) {
       value={fuente ?? ''}
       onChange={(e) => handleChange(e.target.value)}
       aria-label="Filtrar clientes por fuente"
-      className="rounded-lg border border-input bg-background px-3 py-1.5 text-sm text-foreground outline-none focus:ring-2 focus:ring-ring"
+      className="h-9 rounded-lg border border-input bg-card px-3 text-sm text-foreground outline-none focus:ring-2 focus:ring-ring"
     >
       <option value="">Todas las fuentes</option>
       {FUENTES.map((f) => (
