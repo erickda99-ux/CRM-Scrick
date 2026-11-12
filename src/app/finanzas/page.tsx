@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { createServiceClient } from '@/lib/supabase/server';
 import { ResumenCards } from '@/components/organisms/ResumenCards';
-import { GastosTable } from '@/components/organisms/GastosTable';
+import { GastosTopConPanel } from '@/components/organisms/GastosTopConPanel';
 import { FiltroMes } from '@/components/organisms/FiltroMes';
 import { Button } from '@/components/ui/button';
 import { ExportButton } from '@/components/molecules/ExportButton';
@@ -235,7 +235,7 @@ export default async function FinanzasPage({ searchParams }: FinanzasPageProps) 
             </CardContent>
           </Card>
         ) : (
-          <GastosTable gastos={typedGastos} />
+          <GastosTopConPanel gastos={typedGastos} />
         )}
       </div>
     </div>
